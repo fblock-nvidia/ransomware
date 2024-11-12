@@ -1,4 +1,4 @@
-module github.com/marmos91/ransomware
+module github.com/fblock-nvidia/ransomware
 
 go 1.19
 
