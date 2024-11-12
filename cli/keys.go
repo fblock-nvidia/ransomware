@@ -4,8 +4,8 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/marmos91/ransomware/crypto"
-	"github.com/marmos91/ransomware/fs"
+	"github.com/fblock-nvidia/ransomware/crypto"
+	"github.com/fblock-nvidia/ransomware/fs"
 	urfavecli "github.com/urfave/cli/v2"
 )
 

